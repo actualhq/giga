@@ -99,7 +99,7 @@ class VectorizedDistanceModel:
             if len(set1[start:end]) == 0:
                 # skip empty chunks (usually the last chunk if len(set1) % n_chunks != 0)
                 continue
-            pairs.extend(self.run((set1[start:end], set2), progress_bar=False))
+            pairs.extend(self._run_single_matrix((set1[start:end], set2), progress_bar=False))
         return pairs
 
     @validate_arguments
