@@ -76,7 +76,7 @@ class GreedyDistanceConnector:
             # single cache in set 2
             distances = []
             for cid in coord_ids2:
-                distances += cache.lookup[cid]
+                distances += cache.lookup.get(cid, [None])
         else:
             raise Exception("Trying to use a cache of unsupported type")
         distances = list(
