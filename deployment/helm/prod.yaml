@@ -421,7 +421,7 @@ singleuser:
   image:
     # Actual config: single user image for notebook containers
     name: us-central1-docker.pkg.dev/actual-artifacts/giga-models/notebooks
-    tag: "0.3.12"
+    tag: "0.3.13"
     pullPolicy: Always
     pullSecrets: []
   startTimeout: 300
@@ -429,7 +429,7 @@ singleuser:
     limit:
     guarantee:
   memory:
-    limit: 5G
+    limit: 10G
     guarantee: 3G
   extraResource:
     limits: {}

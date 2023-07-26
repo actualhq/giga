@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "giga"
-version = "0.3.12"
+version = "0.3.13"
 description = "Giga models for internet connectivity cost estimation"
 authors = ["Max Nova <max.nova@actualhq.com>", "Nathan Eliason <nathan.eliason@actualhq.com>"]
 readme = "README.md"
