@@ -303,12 +303,12 @@ class ResultDashboard:
         # Fiber Infra
         fiber_plots = widgets.VBox([
             self._map_to_output(self.fiber_infra_map),
-            self._figure_to_output(self.cell_infra_map)
+            self._figure_to_output(self.fiber_distance_bar)
         ])
         # Cell Infra
         cell_plots = widgets.VBox([
             self._map_to_output(self.cell_infra_map),
-            self._map_to_output(self.cell_distance_bar)
+            self._figure_to_output(self.cell_distance_bar)
         ])
         # Cell Coverage
         coverage_plots = widgets.VBox([
