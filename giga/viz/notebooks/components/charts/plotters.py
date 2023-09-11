@@ -204,9 +204,8 @@ def cumulative_distance_bar_plot(
         xaxis={
             "title": x_label,
             "title_font": dict(size=15, color="black", family="Arial"),
-            "showticklabels": False,
+            "showticklabels": True,
             "range": [0, max(cumulative_counts.values) * 1.1],
-            "title_standoff": 170,
         },
     )
     return fig
